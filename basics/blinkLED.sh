@@ -48,6 +48,7 @@ shutdown()
 }
 
 trap shutdown SIGINT
+trap shutdown SIGTERM
 
 # Export pins so that we can use them
 exportPin $RED
